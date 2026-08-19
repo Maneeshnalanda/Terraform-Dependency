@@ -18,6 +18,12 @@ resource "azurerm_resource_group" "maneesh" {
   location = "East US"
 }
 
+resource "azurerm_resource_group" "maneesh24" {
+  name     = "rg-chiku25"
+  location = "East US"
+}
+
+
 resource "azurerm_storage_account" "stgtutu" {
   name                     = "stgnewmaneesh223"
   resource_group_name      = azurerm_resource_group.maneesh.name   #implicit denedency
